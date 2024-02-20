@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Land of Boxes Order Form</title>
+<style>
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color:gray;
+    }
+    .center {
+        margin-top: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h2>Land of Boxes Order Form</h2>
+
+<form>
+    <table>
+        <tr>
+            <th colspan="2">Contact Details</th>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" name="address"></td>
+        </tr>
+        <tr>
+            <td>Telephone Number:</td>
+            <td><input type="tel" name="telephone"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <th colspan="2">Product Details</th>
+        </tr>
+        <tr>
+            <td>Product Name & Price:</td>
+            <td>
+                <select name="product">
+                    <option value="EconoBox">EconoBox: Cost R5</option>
+                    <option value="Standard Box">Standard Box: Cost R10</option>
+                    <option value="Premium Box">Premium Box: Cost R15</option>
+                    <option value="Deluxe Box">Deluxe Box: Cost R20</option>
+                    <option value="Super Deluxe Box">Super Deluxe Box:. Cost R30</option>
+                </select>
+            </td>
+       
+        <tr>
+            <td>Product Number:</td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td>Product Quantity:</td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Method of Payment</th>
+        </tr>
+        <tr>
+            <td>Credit Card Type:</td>
+            <td><input type="text" name="card_type"></td>
+        </tr>
+        <tr>
+            <td>Card Number:</td>
+            <td><input type="text" name="card_number"></td>
+        </tr>
+        <tr>
+            <td>Expiry Date:</td>
+            <td><input type="text" name="expiry_date" placeholder="MM/YY"></td>
+        </tr>
+        <tr>
+            <th colspan="2">Billing & Delivery Address</th>
+        </tr>
+        <tr>
+            <td>Billing Address:</td>
+            <td><input type="text" name="billing_address"></td>
+        </tr>
+        <tr>
+            <td>Delivery Address:</td>
+            <td><input type="text" name="delivery_address"></td>
+        </tr>
+    </table>
+    <div class="center">
+        <input type="submit" value="Submit Order">
+    </div>
+</form>
+
+</body>
+</html>
